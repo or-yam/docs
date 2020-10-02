@@ -67,6 +67,7 @@ module.exports = {
 					'/guide/contribute/locate-issues',
 					'/guide/contribute/report-issues',
 					'/guide/contribute/pull-request',
+ 					'/guide/contribute/working-with-git',
 				]
 			},
 			{

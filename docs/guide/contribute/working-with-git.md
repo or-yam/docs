@@ -1,3 +1,5 @@
+# Working with Git
+
 We prefer working with rebase and NOT with merge.
 To explain why let's take a real world scenario:
 
