@@ -1,6 +1,6 @@
 # Greeenpress configuration
 
-When you create your own instance of Greenpress, you have several ways to pass variables for thr applications.
+When you create your own instance of Greenpress, you have several ways to pass variables for the applications.
 
 We encourage the ability to manage variables through database, that can be modified from the admin panel, but there are many variables that should be set at environment variables, at the application's bootstrap.
 

@@ -54,8 +54,8 @@ module.exports = {
 				path: '/guide/',
 				children: [
 					'/guide/getting-started',
-					'/guide/windows-installation',
 					'/guide/greenpress-configuration',
+					'/guide/local-docker-composition'
 				]
 			},
 			{
