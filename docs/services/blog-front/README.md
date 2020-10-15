@@ -19,8 +19,7 @@ You can pick the theme for your blog from those options. Note that all themes sh
 - damal 
 - default
 
-You can also create your own theme.
-<!-- TODO: document "create your own theme" -->
+You can also create your own theme. See [customization docs](https://docs.greenpress.info/guide/customize.html) to learn more.
 
 **Set by environment variable: `FRONT_THEME`**
 
