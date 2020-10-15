@@ -6,7 +6,7 @@ WIP
 
 | Prop Name | Set By Environment   | Prop Type | Default Value                           |
 |-----------|----------------------|-----------|-----------------------------------------|
-| theme     | THEME                | string    | 'default'                               |
+| theme     | FRONT_THEME          | string    | 'default'                               |
 | cwd       | FRONT_SERVICE_CWD    | string    | './node_modules/@greenpress/blog-front' |
 | script    | FRONT_SERVICE_SCRIPT | string    | 'npm run dev' \| 'npm start'            |
 

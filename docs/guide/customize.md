@@ -81,13 +81,15 @@ As stated in the [blog-front docs](https://docs.greenpress.info/services/blog-fr
 
 ```t
 # greenpress.local.env
-THEME=ocean
+FRONT_THEME=ocean
 ```
 
 ```js
 // greenpress.config.js
 module.exports = {
-  theme: 'ocean'
+  front: {
+   theme: 'ocean'
+  }
 }
 ```
 
