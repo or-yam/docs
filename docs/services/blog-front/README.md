@@ -6,7 +6,7 @@ WIP
 
 | Prop Name | Set By Environment   | Prop Type | Default Value                           |
 |-----------|----------------------|-----------|-----------------------------------------|
-| theme     | THEME                | string    | 'default'                               |
+| theme     | FRONT_THEME          | string    | 'default'                               |
 | cwd       | FRONT_SERVICE_CWD    | string    | './node_modules/@greenpress/blog-front' |
 | script    | FRONT_SERVICE_SCRIPT | string    | 'npm run dev' \| 'npm start'            |
 
@@ -19,8 +19,7 @@ You can pick the theme for your blog from those options. Note that all themes sh
 - damal 
 - default
 
-You can also create your own theme.
-<!-- TODO: document "create your own theme" -->
+You can also create your own theme. See [customization docs](https://docs.greenpress.info/guide/customize.html) to learn more.
 
 **Set by environment variable: `FRONT_THEME`**
 
