@@ -82,6 +82,7 @@ module.exports = {
 					'/services/content/',
 					'/services/secrets/',
 					'/services/auth/',
+					'/services/drafts/'
 				]
 			},
 			{

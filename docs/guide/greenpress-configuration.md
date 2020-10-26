@@ -218,6 +218,7 @@ You can also add configurations to the greenpress services, as described in each
 - [Content service](https://docs.greenpress.info/services/content/#configuarion)
 - [Secrets service](https://docs.greenpress.info/services/secrets/#configuration)
 - [Assets service](https://docs.greenpress.info/services/assets/#configuration)
+- [Drafts service](https://docs.greenpress.info/services/drafts/#configuration)
 
 <!-- TODO: when mailing & drafts services configurations will be merged to the base config, document them as well -->
 
