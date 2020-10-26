@@ -39,18 +39,18 @@ By default, there are three roles: `user`, `editor` and `admin`.
 - The `editor` and `admin` roles are editor roles, allowing them to post content on your blog.
 - The `admin` role is also a priviledged role.
 
-## What are other rank patterns?
+## What are other role patterns?
 
 ### Marketing Team
 
-- A `user` rank for every user on the website
-- An `emloyee` rank for every marketing employee. this rank has an editor role.
-- A `manager` rank will be a priviledged and editor role, given to marketing managers.
-- The `admin` rank will be given to head of marketing
+- A `user` role for every user on the website
+- An `emloyee` role for every marketing employee. this rank has an editor role.
+- A `manager` role will be a priviledged and editor role, given to marketing managers.
+- The `admin` role will be given to head of market=ing
 
 ### Online Community
 
-- The default rank, `member`, will have an editor role.
-- An `elite-member` rank will have an editor role.
-- A `co-admin` rank will have an editor and priviledged roles, allowing them to premote and demote other users.
-- The `admin` rank will be given to the creator of the community.
+- The default role, `member`, will have an editor role.
+- An `elite-member` role will have an editor role.
+- A `co-admin` role will have an editor and priviledged roles, allowing them to premote and demote other users.
+- The `admin` role will be given to the creator of the community.
