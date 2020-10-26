@@ -91,8 +91,7 @@ module.exports = {
 				children: [
 					'/tools/cli',
 					'/tools/cli-service-pm2',
-					'/tools/api-kit',
-					'/tools/gp-config',
+					'/tools/api-kit'
 				]
 			},
 		]
