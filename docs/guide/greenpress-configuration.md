@@ -40,6 +40,7 @@ module.exports = function(baseConfig) {
 | port                  | PORT                                     | number    | 3000                                     |
 | tenant                | TENANT                                   | string    | '0'                                      |
 | excludedServices      | npm_config_x                             | string[]  | []                                       |
+| roles                 | -                                        | object    | [see blow](#auth_roles)                  |
 | noDocker              | npm_config_noDocker                      | boolean   | false                                    |
 | memoryLimitation (MB) | MAX_MEMORY_USAGE                         | number    |                                          |
 | mongoUri              | MONGODB_URI                              | string    | mongodb://localhost/greenpress           |
@@ -93,6 +94,33 @@ module.exports = {
   excludedServices: ['secrets', 'admin']
 }
 ```
+
+### Auth Roles
+
+You are able to modify the roles in your app.
+
+**NOTE: This variable can only be set in `greenpress.config.js`**
+
+| Prop Name   | Prop Type | Default Value       |
+|-------------|-----------|---------------------|
+| all         | string    | 'user,editor,admin' |
+| default     | string    | 'user'              |
+| priviledged | string    | 'admin'             |
+| editors     | string    | 'editor,admin'      |
+
+For details about user permissions, check out the [permissions page](https://docs.greenpress.info/guide/permissions.html).
+
+```js
+module.exports = {
+  roles: {
+    all: '[ALL_ROLES]',
+    default: '[DEFAULT_USER_ROLE]',
+    priviledged: '[PRIVILEDGED_ROLES]',
+    editors: '[EDITOR_ROLES]'
+  }
+}
+```
+
 
 
 ### No Docker (For MongoDB & Dev)
