@@ -29,9 +29,9 @@ module.exports = {
 }
 ```
 
-### [DEPRECATED] Refresh Token Secret
+### Refresh Token Secret
 
-**NOTE: Greenpress now uses cookie authentication**
+**NOTE: Greenpress Admin panel now uses cookie authentication**
 
 **Set by environment variable: `REFRESH_TOKEN_SECRET`**
 
