@@ -24,10 +24,12 @@ You can also create your own theme. See [customization docs](https://docs.greenp
 **Set by environment variable: `FRONT_THEME`**
 
 ```js
+const { join } = require('path')
+
 module.exports = {
   services: {
     front: {
-      theme: '[YOUR_DESIROUS_THEME]'
+      theme: 'global:' + join(process.cwd(), 'themes', '[YOUR_DESIROUS_THEME]')
     }
   }
 }
