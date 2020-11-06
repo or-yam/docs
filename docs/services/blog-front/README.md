@@ -21,15 +21,29 @@ You can pick the theme for your blog from those options. Note that all themes sh
 
 You can also create your own theme. See [customization docs](https://docs.greenpress.info/guide/customize.html) to learn more.
 
+You can set the path to your desired theme. It can be done by either using only the theme's prefix (checked by the blog front), or either by using the relative path to the theme (mostly used for external/customized themes).
+
 **Set by environment variable: `FRONT_THEME`**
 
+### Prefix Check
+```js
+module.exports = {
+	services: {
+		front: {
+			theme: '[YOUR_DESIRED_THEME]'
+		}
+	}
+} 
+```
+
+### Relative Path
 ```js
 const { join } = require('path')
 
 module.exports = {
   services: {
     front: {
-      theme: 'global:' + join(process.cwd(), 'themes', '[YOUR_DESIROUS_THEME]')
+      theme: 'global:' + join(process.cwd(), 'themes', '[YOUR_DESIRED_THEME]')
     }
   }
 }
