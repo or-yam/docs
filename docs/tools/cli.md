@@ -10,14 +10,23 @@ npm install -g @greenpress/cli
 
 ## Commands
 
-- **help**: provides information about all the supported commands<br>
-  usage: `greenpress h` or `greenpress --help`
+### **help**
 
-- **version**: provides information about installed cli's version<br>
-  usage: `greenpress -V`, `greenpress --version`
+provides information about all the supported commands
 
-- **start**: starts the app<br>
-  usage:
+usage: `greenpress h` or `greenpress --help`
+
+### **version**
+
+provides information about installed cli's version
+
+usage: `greenpress -V`, `greenpress --version`
+
+### **start**
+
+starts the app
+
+usage:
 
 `greenpress start [mode [-l, --local= \<services\>][-x, --exclude = \<services\>][-d, --debug]]`
 
@@ -41,68 +50,91 @@ options:
 
   `greenpress start debug`
 
-- **stop**: shuts down app<br>
-  usage:
+### **stop**
 
-  `greenpress stop`
+shuts down app
 
-- **upgrade**: compares local dependencies version with latest Greenpress version, allow user to upgrade local dependencies on will.<br>
-  usage:
+usage:
 
-  `greenpress upgrade`
+`greenpress stop`
 
-- **create**: create a new app using greenpress.
-  usage:
+### **upgrade**
 
-  `greenpress create [name][type] [altFront][mode]`
+compares local dependencies version with latest Greenpress version, allow
 
+user to upgrade local dependencies on will.
+usage:
+
+`greenpress upgrade`
+
+### **create**
+
+create a new app using greenpress.
+
+usage:
+
+`greenpress create [name][type] [altFront][mode]`
+
+options:
+
+- name: choose app name
+- type: choose developer (input: `pm2`) or user (no input required) packages
+- altFront: choose alternative app frontend source (input: alternative frontend source's url)
+- mode: choose developer (input: `dev`) or user (no input required) mode
+
+### **populate**
+
+create initial content and admin user for your app (**currently doesn't work with node V15**)
+
+usage:
+
+`greenpress populate`
+
+### **missing**
+
+checks if dependencies are install. If not, provides an installation link for them, else, displays their version number.<br>
+
+usage:
+
+`greenpress missing`
+
+### **service**
+
+handles actions for easier development of services
+
+usage:
+
+`greenpress service [action][services]`
+
+supported services:
+
+- auth, admin, assets, secrets, content, front
+
+supported actions:
+
+- `create`: creates a dev folder (if doesn't exist) and clones the requested services into it
   options:
 
-  - name: choose app name
-  - type: choose developer (input: `pm2`) or user (no input required) packages
-  - altFront: choose alternative app frontend source (input: alternative frontend source's url)
-  - mode: choose developer (input: `dev`) or user (no input required) mode
+  - `-b/--branch <branch_name>`: clones the services immediately to the requested branch (**if multiple services are requested, all must have the same branch name**)
 
-- **populate**: create initial content and admin user for your app (**currently doesn't work with node V15**)<br>
-  usage:
+  E.g:
 
-  `greenpress populate`
+  `greenpress service create admin,assets`
 
-- **missing**: checks if dependencies are install. If not, provides an installation link for them, else, displays their version number.<br>
-  usage:
+### **theme**
 
-  `greenpress missing`
+create custom themes.
 
-- **service**: handles actions for easier development of services
-  usage:
+usage:
 
-  `greenpress service [action][services]`
+`greenpress theme [options][name]`
 
-  supported services:
+options:
 
-  - auth, admin, assets, secrets, content, front
-
-  supported actions:
-
-  - `create`: creates a dev folder (if doesn't exist) and clones the requested services into it
-    options:
-
-    - `-b/--branch <branch_name>`: clones the services immediately to the requested branch (**if multiple services are requested, all must have the same branch name**)
-
-    E.g:
-
-    `greenpress service create admin,assets`
-
-- **theme**: create custom themes.<br>
-  usage:
-
-  `greenpress theme [options][name]`
-
-  options:
-
-  - `--from <theme>` set base theme to be used
-  - a valid name will copy a theme from the blog-front repository's `themes` folder.
-  - a git repository (using ssh with `git@` prefix) will clone the theme from this repository.
+- `--from <theme>` set base theme to be used
+- a valid name will copy a theme from the blog-front repository's `themes` folder.
+- a git repository (using ssh with `git@` prefix) will clone the theme from this repository.
 
 E.g:
+
 `greenpress theme my-theme --from=classic`
