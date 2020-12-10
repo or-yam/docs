@@ -10,6 +10,14 @@
 
 [Open issues](https://github.com/greenpress/docs/issues)
 
+## TODO
+
+- [] greenpress configuration
+- [] greenpress cli
+- [] mailing service and draft service configurations
+- [] create your own theme
+- [] roles
+
 ## Documentation development
 
 Greenpress's documentation is based on VuePress.
