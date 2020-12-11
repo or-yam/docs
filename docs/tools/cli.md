@@ -8,9 +8,11 @@ A command-line interface to help you create and manage your Greenpress applicati
 npm install -g @greenpress/cli
 ```
 
+## For using a specific services
+
 For commands that accepts a service_name as parameter, the supported services are:
 
-- auth, admin, assets, secrets, content, front
+- auth, admin, assets, secrets, content, front, mailing
 
 If multiple services are required at once, separate them with a comma (,) without spaces in between.
 
@@ -133,10 +135,10 @@ usage:
 
 options:
 
-- `--from <theme>` set base theme to be used
+- `--from=<theme>` set base theme to be used
 - a valid name will copy a theme from the blog-front repository's `themes` folder.
 - a git repository (using ssh with `git@` prefix) will clone the theme from this repository.
 
 E.g:
 
-`greenpress theme my-theme --from classic`
+`greenpress theme my-theme --from=classic`
