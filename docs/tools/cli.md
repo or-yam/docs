@@ -8,6 +8,16 @@ A command-line interface to help you create and manage your Greenpress applicati
 npm install -g @greenpress/cli
 ```
 
+For commands that accepts a service_name as parameter, the supported services are:
+
+- auth, admin, assets, secrets, content, front
+
+If multiple services are required at once, separate them with a comma (,) without spaces in between.
+
+E.g:
+
+`greenpress start dev -l assets,front,auth`
+
 ## Commands
 
 ### **help**
@@ -28,7 +38,7 @@ starts the app
 
 usage:
 
-`greenpress start [mode [-l, --local= \<services\>][-x, --exclude = \<services\>][-d, --debug]]`
+`greenpress start [mode [-l, --local= \<service_name\>][-x, --exclude = \<services\>]]`
 
 options:
 
@@ -45,10 +55,6 @@ options:
   E.g:
 
   `greenpress start -x none`
-
-- debug: keeps the start process alive and display live application logs.
-
-  `greenpress start debug`
 
 ### **stop**
 
@@ -104,11 +110,7 @@ handles actions for easier development of services
 
 usage:
 
-`greenpress service [action][services]`
-
-supported services:
-
-- auth, admin, assets, secrets, content, front
+`greenpress service [action][service_name]`
 
 supported actions:
 
@@ -137,4 +139,4 @@ options:
 
 E.g:
 
-`greenpress theme my-theme --from=classic`
+`greenpress theme my-theme --from classic`
