@@ -8,7 +8,7 @@ A command-line interface to help you create and manage your Greenpress applicati
 npm install -g @greenpress/cli
 ```
 
-## For using a specific services
+## For using specific services
 
 For commands that accepts a service_name as parameter, the supported services are:
 
