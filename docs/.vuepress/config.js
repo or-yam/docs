@@ -96,6 +96,15 @@ module.exports = {
 					'/tools/api-kit'
 				]
 			},
+			{
+				title: 'Test',
+				collapsable: false,
+				path: '/tests/',
+				children: [
+					'/tests/manual-tests',
+					
+				]
+			},
 		]
 	},
 
